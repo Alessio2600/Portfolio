@@ -201,7 +201,7 @@ nav {
 }
 
 .hero p {
-    color: var(--pale-orange);
+    color: white;
     font-size: 1.3rem;
     max-width: 700px;
     margin: 0 auto var(--spacing-lg);
