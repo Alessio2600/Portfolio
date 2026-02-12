@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio di Alessio Dallorto - Pianificazione urbanistica, trasporti sostenibili e analisi dati. Studente presso il Politecnico di Milano.">
+    <meta name="keywords"
+        content="urbanistica, trasporti, sostenibilità, milano, politecnico, pianificazione territoriale">
+    <meta name="author" content="Alessio Dallorto">
+    <title>Alessio Dallorto | Urban Transport & Data</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Condensed:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">ALESSIO DALLORTO</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#documenti">Saggi</a>
+                <a href="#tavole">Tavole</a>
+                <a href="#contatti">Contatti</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="home" class="hero">
+        <div class="container slide-up">
+            <h1>Portfolio</h1>
+            <p>Urbanista specializzato in trasporti e analisi statistica dei big data.
+                Questa pagina raccoglie alcune tavole ed elaborati realizzati durante il mio percorso di studi,
+                per dare un'idea delle elaborazioni e competenze acquisite nel corso della formazione
+                in pianificazione urbanistica e analisi dei dati.</p>
+            <p style="font-size: 1.1rem; margin-top: 0.5rem;">Alessio Dallorto - Politecnico di Torino</p>
+            <a href="#documenti" class="btn">Esplora Progetti</a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- DOCUMENTI SECTION -->
+        <section id="documenti">
+            <div class="section-header">
+                <h2>📜 Saggi & Ricerche</h2>
+                <span class="badge">Urban Dynamics</span>
+            </div>
+            <p>Analisi tecniche e riflessioni critiche sui sistemi di trasporto e l'urbanistica.</p>
+
+            <div class="grid" id="pdf-grid">
+                <div class="loading">Caricamento documenti</div>
+            </div>
+        </section>
+
+        <!-- TAVOLE SECTION -->
+        <section id="tavole">
+            <div class="section-header">
+                <h2>🏘️ Tavole Urbanistiche</h2>
+                <span class="badge">Planning & Design</span>
+            </div>
+            <p>Mappature, schemi di flusso e visioni spaziali per la mobilità.</p>
+
+            <div class="grid" id="img-grid">
+                <div class="loading">Caricamento tavole</div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PDF MODAL -->
+    <div id="pdf-modal" class="pdf-modal">
+        <div class="pdf-modal-content">
+            <div class="pdf-modal-header">
+                <h3 id="pdf-modal-title">Anteprima Documento</h3>
+                <button class="pdf-modal-close" onclick="closePDFModal()">&times;</button>
+            </div>
+            <embed id="pdf-modal-embed" class="pdf-modal-iframe" type="application/pdf">
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="contatti">
+        <div class="container">
+            <p>&copy; 2026 Alessio Dall'Orto | Portfolio</p>
+            <p>Torino, Italia</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

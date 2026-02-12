@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-02-10T16:44:22.878009",
+  "version": "2.0.0",
+  "tavole": {
+    "count": 2,
+    "items": [
+      {
+        "name": "3_ASSETTO NORMATIVCO.pdf",
+        "display_name": "3_ASSETTO NORMATIVCO",
+        "path": "Tavole/3_ASSETTO NORMATIVCO.pdf",
+        "size_mb": 6.51,
+        "size_label": "6.51 MB",
+        "extension": ".pdf",
+        "is_image": false,
+        "is_pdf": true,
+        "too_large": false
+      },
+      {
+        "name": "ELABORATI CARTOGRAFICI ALLEGATI.pdf",
+        "display_name": "ELABORATI CARTOGRAFICI ALLEGATI",
+        "path": "Tavole/ELABORATI CARTOGRAFICI ALLEGATI.pdf",
+        "size_mb": 928.04,
+        "size_label": "928.04 MB",
+        "extension": ".pdf",
+        "is_image": false,
+        "is_pdf": true,
+        "too_large": true
+      }
+    ]
+  },
+  "documenti": {
+    "count": 2,
+    "items": [
+      {
+        "name": "Final Report form_EN .pdf",
+        "display_name": "Final Report form_EN ",
+        "path": "Documenti/Final Report form_EN .pdf",
+        "size_mb": 1.01,
+        "size_label": "1.01 MB",
+        "extension": ".pdf",
+        "is_image": false,
+        "is_pdf": true,
+        "too_large": false
+      },
+      {
+        "name": "Tesi_S285387_Alessio_Dallorto.pdf",
+        "display_name": "Tesi_S285387_Alessio_Dallorto",
+        "path": "Documenti/Tesi_S285387_Alessio_Dallorto.pdf",
+        "size_mb": 10.47,
+        "size_label": "10.47 MB",
+        "extension": ".pdf",
+        "is_image": false,
+        "is_pdf": true,
+        "too_large": false
+      }
+    ]
+  }
+}

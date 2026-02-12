@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# File grandi e cartelle non necessarie per il sito
+anno 3 zip/
+app.py
+
+# File troppo grandi per GitHub (max 100 MB per file)
+# Se hai PDF > 100MB, usa Git LFS oppure escludili
+Tavole/ELABORATI CARTOGRAFICI ALLEGATI.pdf
