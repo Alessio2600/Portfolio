@@ -46,7 +46,7 @@ async function loadManifest() {
         renderDocumenti(manifest.documenti);
         renderTavole(manifest.tavole);
     } catch (error) {
-        console.error('Errore caricamento manifest:', error);
+        console.error('Error loading manifest:', error);
         showError('pdf-grid');
         showError('img-grid');
     }
@@ -62,8 +62,8 @@ function renderDocumenti(data) {
     if (!data || data.count === 0) {
         container.innerHTML = `
             <div class="empty-state">
-                <h3>📂 Nessun documento disponibile</h3>
-                <p>Aggiungi file PDF nella cartella <code>Documenti/</code></p>
+                <h3>📂 No documents available</h3>
+                <p>Add PDF files to the <code>Documenti/</code> folder</p>
             </div>`;
         return;
     }
@@ -84,8 +84,8 @@ function renderTavole(data) {
     if (!data || data.count === 0) {
         container.innerHTML = `
             <div class="empty-state">
-                <h3>🖼️ Nessuna tavola disponibile</h3>
-                <p>Aggiungi file nella cartella <code>Tavole/</code></p>
+                <h3>🖼️ No boards available</h3>
+                <p>Add files to the <code>Tavole/</code> folder</p>
             </div>`;
         return;
     }
@@ -115,8 +115,8 @@ function createCard(item, type) {
     const isTooLarge = item.too_large || item.size_mb > 100;
 
     // Determinare il tipo di label
-    const typeLabel = type === 'documento' ? 'Documento' : 'Tavola';
-    const formatLabel = isImage ? 'Immagine' : 'PDF';
+    const typeLabel = type === 'documento' ? 'Document' : 'Board';
+    const formatLabel = isImage ? 'Image' : 'PDF';
 
     if (isImage) {
         // === IMMAGINE: mostra direttamente ===
@@ -129,7 +129,7 @@ function createCard(item, type) {
                 <h3>${displayName}</h3>
                 <p class="card-meta">${formatLabel} - ${sizeLabel}</p>
                 <a href="${item.path}" class="btn" target="_blank" rel="noopener noreferrer">
-                    🔍 Visualizza
+                    🔍 View
                 </a>
             </div>`;
     } else if (isPDF) {
@@ -142,17 +142,17 @@ function createCard(item, type) {
             <div class="card-image-wrapper">
                 <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" 
                      alt="${displayName}">
-                <div class="card-badge">${isTooLarge ? '⚠️ File grande' : '📄 PDF'}</div>
+                <div class="card-badge">${isTooLarge ? '⚠️ Large file' : '📄 PDF'}</div>
             </div>
             <div class="card-body">
                 <h3>${displayName}</h3>
                 <p class="card-meta">${typeLabel} PDF - ${sizeLabel}</p>
                 ${isTooLarge
                 ? `<a href="${item.path}" class="btn btn-download" download>
-                           ⬇️ Scarica (${sizeLabel})
+                           ⬇️ Download (${sizeLabel})
                        </a>`
                 : `<button class="btn pdf-btn" onclick="openPDFPreview('${safePath}', '${safeName}')">
-                           👁️ Anteprima Rapida
+                           👁️ Quick Preview
                        </button>`
             }
             </div>`;
